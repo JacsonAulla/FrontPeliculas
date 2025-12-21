@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* Fondo muy oscuro y texto blanco por defecto */
+  @apply bg-weseco-950 text-white antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+/* Scrollbar Minimalista (Gris sobre negro) */
+::-webkit-scrollbar {
+  width: 6px;
+  /* Más fino */
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  /* Fondo transparente */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  /* Gris oscuro */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #71717a;
+  /* Gris un poco más claro al pasar el mouse */
+}
